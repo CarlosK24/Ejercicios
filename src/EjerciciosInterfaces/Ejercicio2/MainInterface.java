@@ -9,5 +9,11 @@ public class MainInterface {
         System.out.println(jaguar.hasBeenFed(false));
         System.out.println(jaguar.feed());
 
+        Elefante elefante=new Elefante("Azul",29);
+        System.out.println(elefante.feed());
+        System.out.println(elefante.feed());
+        System.out.println(elefante.hasBeenFed(false));
+        System.out.println(elefante.feed());
+
     }
 }
