@@ -33,9 +33,8 @@ private SimpleDateFormat horadefinida;
         this.horadefinida= new SimpleDateFormat("hh");
         this.hora =new Date();
         hora.getTime();
-        horadefinida.format(hora);
-        String horacompuesta=horadefinida.toString();
-        return "El "+this+" se parqueo a las "+horacompuesta;
+        String hs=horadefinida.format(hora);
+        return "El "+this+" se parqueo a las "+hs;
     }
 
     @Override
@@ -47,8 +46,7 @@ private SimpleDateFormat horadefinida;
     public String Apagar() {
         this.horadefinida = new SimpleDateFormat("dd yy hh");
         hora.getTime();
-        horadefinida.format(hora);
-        String horaCompuesta=horadefinida.toString();
+        String horaCompuesta=horadefinida.format(hora);
         return "El taxi se apago el "+horaCompuesta;
     }
 
